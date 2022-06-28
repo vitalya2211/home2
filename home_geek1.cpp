@@ -15,9 +15,9 @@ int main()
 	564=4*/
 	cout <<"insert number3\n";
 	cin>>num;
-	if (num>99)
-	cout << "num";
-	else cout << "no\n";
+	if ((num<99)&(num>-99))
+		cout << "no digital\n";
+	else 
 	cout << endl;
 	/*принимает цифру, обозначающую день недели и проверяет, 
 	является ли этот день выходным.
