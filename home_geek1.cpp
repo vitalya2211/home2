@@ -5,7 +5,7 @@ int main()
 	int num=0;
 	//принимает на вход трехзначное число, на выходе вторая цифра. 456=5
 	//while()
-	cout <<  "insert number\n";
+	cout <<  "insert number\n out 2-th dig\n";
 	cin>>num;
 	num=(num%100)/10;
 	cout << num<<endl;
@@ -13,11 +13,20 @@ int main()
 	4578=7
 	56=нет
 	564=4*/
-	cout <<"insert number3\n";
+	cout <<"insert number\n out 3-th dig, or not digital\n";
 	cin>>num;
 	if ((num<99)&(num>-99))
 		cout << "no digital\n";
 	else 
+	{
+		if((num>999)| (num<-999))
+			{
+				for(;(num>1000)|(num<-1000);)
+					 num/=10;
+				
+			}
+		 cout<< num%10;
+	}
 	cout << endl;
 	/*принимает цифру, обозначающую день недели и проверяет, 
 	является ли этот день выходным.
